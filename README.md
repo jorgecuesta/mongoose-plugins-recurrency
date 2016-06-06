@@ -1,6 +1,10 @@
 ## mongoose-plugins-recurrency
 [![Build Status](https://travis-ci.org/jorgecuesta/mongoose-plugins-recurrency.svg?branch=master)](https://travis-ci.org/jorgecuesta/mongoose-plugins-recurrency)
 [![Coverage Status](https://coveralls.io/repos/github/jorgecuesta/mongoose-plugins-recurrency/badge.svg?branch=master)](https://coveralls.io/github/jorgecuesta/mongoose-plugins-recurrency?branch=master)
+[![npm version](https://badge.fury.io/js/mongoose-plugins-recurrency.svg)](https://badge.fury.io/js/mongoose-plugins-recurrency)
+[![Dependency Status](https://david-dm.org/jorgecuesta/mongoose-plugins-recurrency.svg)](https://david-dm.org/jorgecuesta/mongoose-plugins-recurrency)
+[![devDependency Status](https://david-dm.org/jorgecuesta/mongoose-plugins-recurrency/dev-status.svg)](https://david-dm.org/jorgecuesta/mongoose-plugins-recurrency#info=devDependencies)
+[![peerDependency Status](https://david-dm.org/jorgecuesta/mongoose-plugins-recurrency/peer-status.svg)](https://david-dm.org/jorgecuesta/mongoose-plugins-recurrency#info=peerDependencies)
 
 This package was created so some mongoose plugins could be installed only 
 once per schema. And not every time a new model is created using that same schema.
