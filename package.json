@@ -7,8 +7,6 @@
     "test": "test"
   },
   "scripts": {
-    "prepublish": "grunt",
-    "postinstall": "grunt",
     "test": "grunt"
   },
   "engines": {
