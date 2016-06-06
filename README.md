@@ -1,4 +1,6 @@
 ## mongoose-plugins-recurrency
+[![Build Status](https://travis-ci.org/jorgecuesta/mongoose-plugins-recurrency.svg?branch=master)](https://travis-ci.org/jorgecuesta/mongoose-plugins-recurrency)
+[![Coverage Status](https://coveralls.io/repos/github/jorgecuesta/mongoose-plugins-recurrency/badge.svg?branch=master)](https://coveralls.io/github/jorgecuesta/mongoose-plugins-recurrency?branch=master)
 
 This package was created so some mongoose plugins could be installed only 
 once per schema. And not every time a new model is created using that same schema.
