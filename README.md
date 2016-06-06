@@ -10,25 +10,25 @@ or just once for that schema.
 
 `npm install mongoose-plugins-recurrency`
 
-> @NOTE: It require as peerDependency mongoose.
+> @NOTE: It requires mongoose as peerDependency.
 
 ### Usage
 
 ```javascript
 var mongoose = require('mongoose');
 
-// It automatically add logic to mongoose.
+// It automatically adds logic to mongoose.
 require('mongoose-plugins-recurrency');
 
-// Register Global plugin with recursive flag in false to prevent it be more than one.
+// Register Global plugin with recursive flag set to false to prevent it to be called more than once.
 mongoose.plugin(function pluginA (schema, options){
     console.log('Registering only once');
 }, {
     recursive: false
 });
 
-// Register Global plugin with recursive flag in true lo leave it work like mongoose does.
-// @NOTE: if don't pass recursive it also work like if you pass true.
+// Register Global plugin with recursive flag set to true to use mongoose normal behavior.
+// @NOTE: recursive default value is true
 mongoose.plugin(function pluginB(schema, options){
     console.log('Registering only once');
 }, {
@@ -39,11 +39,11 @@ var Dummy = new mongoose.Schema({
     title: String
 });
 
-// You also can add with same logic plugin directly on schema before build models.
+// You also can also use it directly on a schema before building the models.
 Dummy.plugin(function pluginC (schema, options){
     console.log('## Something Great ##');
 }, {
-    recursive: true // or false or don't pass it.
+    recursive: true // or false
 });
 
 var DummyA = mongoose.model('DummyA', Dummy);
