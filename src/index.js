@@ -20,7 +20,7 @@ mongoose.Schema.prototype.plugin = function (fn, opts) {
         schema._appliedPlugins = [];
     }
 
-    if (opts.recursive === false) {
+    if (opts && opts.recursive === false) {
         if (schema._appliedPlugins.indexOf(fn) > -1) {
             return schema;
         }
