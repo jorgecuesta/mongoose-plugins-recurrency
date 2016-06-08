@@ -45,7 +45,7 @@ mongoose.Schema.prototype.plugin = function (fn, opts) {
     if (!schema._appliedPlugins) {
         schema._appliedPlugins = [];
     }
-
+    
     if (!schema.__notRecursive) {
         schema.__notRecursive = [];
     }
