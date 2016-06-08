@@ -13,7 +13,7 @@ var dbURI = 'mongodb://localhost/global_plugin_multiple_model_same_schema',
 // Add our tweak.
 require('../src/index');
 
-pluginA = function lastModifiedPlugin(schema, options) {
+pluginA = function pluginA (schema, options) {
     if (!schema.pluginACounter) {
         schema.pluginACounter = 0;
     }
@@ -36,7 +36,7 @@ pluginA = function lastModifiedPlugin(schema, options) {
     });
 };
 
-pluginB = function (schema, options) {
+pluginB = function pluginB (schema, options) {
     if (!schema.pluginBCounter) {
         schema.pluginBCounter = 0;
     }
