@@ -1,6 +1,6 @@
 {
   "name": "mongoose-plugins-recurrency",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "This package was created so some mongoose plugins could be installed only  once per schema. And not every time a new model is created using that same schema.",
   "main": "src/index.js",
   "directories": {
